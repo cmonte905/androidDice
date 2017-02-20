@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.cemo.diceout.MainActivity"
+    android:baselineAligned="false"
+    android:weightSum="1"
+    android:background="@android:color/holo_green_dark">
+
+
+    <Button
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:text="Roll Dice!"
+        android:id="@+id/rollButton"
+        android:onClick="rollDice"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="0dp"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/die1Image"
+        android:src="@drawable/die_1"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/die2Image"
+        android:src="@drawable/die_1"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/die3Image"
+        android:src="@drawable/die_1"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rollResult"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/rollScore"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:fontFamily="monospace"/>
+
+
+</LinearLayout>
